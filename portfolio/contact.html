@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Hamsa Rajaraman -->
+<html>
+    <head>
+        <title>Portfolio - Hamsa Rajaraman - Web Developer</title>
+        <link href="styles.css" rel="stylesheet">
+        <script>
+            function checkConfirmation() {
+                if (!window.location.href.endsWith('.html')) {
+                    document.getElementById('confirmation').innerHTML = "Thanks for contacting me.";
+                    document.getElementById('fname').value = "";
+                    document.getElementById('lname').value = "";
+                    document.getElementById('email').value = "";
+                    document.getElementById('subject').value = "";
+                }
+            }
+        </script>
+    </head>
+    <body onload="checkConfirmation();">
+        <div class='content'>
+        <nav>
+        <div class='flex-container'>
+            <div id='menu'>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html_projects.html">HTML Projects</a></li>
+                    <li><a href="projects.html">Javascript Projects</a></li>
+                    <li class="active" style="float:right"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <header>
+            <h1 class='title'>Contact me</h1>
+        </header>
+        <main>
+            <div class="container">
+                <div id='confirmation'></div>
+                <br>
+                <form action="contact.html?confirmed">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                    
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="" style="height:150px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                </form>
+            </div>            
+        </main>
+        </div>
+        <footer>
+            <div class='footer'>
+                <p class='footer-text'>Living, learning, & leveling up one day at a time.</p>
+            </div>
+        </footer>            
+    </body>
+</html>

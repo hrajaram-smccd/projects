@@ -1,0 +1,71 @@
+body {
+    background-color: darkcyan;
+    font: 14pt;
+}
+
+#title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+table > caption {
+    font-weight:bolder;
+    padding-bottom: 5px;
+  }
+
+.flex-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container-1 {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    border: 2px solid yellow;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+#orderForm {
+    border: 2px solid yellow;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+#invoice {
+    border: 2px solid yellow;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;        
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    color: red;
+}
+

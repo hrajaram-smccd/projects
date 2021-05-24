@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Hamsa Rajaraman -->
+<html>
+    <head>
+        <title>Hamsa Rajaraman Store</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1 id='title'>Welcome to myFastFood store</h1>
+        <div class='flex-container'>
+            <div id='menu'></div>
+            <div id='orderForm'>
+                <h3>Add Item</h3>
+                <p>
+                    <label for='item'>Item</label>
+                    <input id='item' name='item' type='text'>
+                </p>
+                <p>
+                    <label for='qty'>Qty </label>
+                    <input id='qty' name='qty' type='number'>    
+                </p>
+                <p>
+                    <button onclick='addItem()'>Add Item</button>
+                    <button onclick='newOrder()'>New Order</button> 
+                </p>                
+            </div>
+        </div>
+        <div class='flex-container-1'>
+            <div id='invoice'>
+                <p>
+                    <label for="orderTotal">TOTAL DUE : $ </label>
+                    <span id='orderTotal'>0.00</span>
+                </p>
+            </div>
+            <div id='rec'>
+                <textarea id='receipt' rows="10" cols="50"></textarea>        
+            </div>
+            <button onclick='placeOrder()'>Place Order</button>
+        </div>
+    </body>
+</html>
